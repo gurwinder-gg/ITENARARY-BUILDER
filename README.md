@@ -31,60 +31,47 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
 
 ---
 
-## 📦 Sample JSON Request
+## 🛠️ Tech Stack
 
-```json
-{
-  "id": "trip001",
-  "user_id": "gurwinder07",
-  "title": "Goa Trip",
-  "start_date": "2025-11-01",
-  "end_date": "2025-11-05",
-  "hotels": [
-    {
-      "name": "Taj Resort",
-      "city": "Goa",
-      "check_in_date": "2025-11-01",
-      "check_out_date": "2025-11-05",
-      "nights": 4
-    }
-  ],
-  "flights": [
-    {
-      "airline": "IndiGo",
-      "flight_no": "6E245",
-      "from": "Delhi",
-      "to": "Goa",
-      "departure": "2025-11-01 06:00",
-      "arrival": "2025-11-01 08:30"
-    }
-  ],
-  "activities": [
-    {
-      "time_of_day": "morning",
-      "description": "Beach visit",
-      "location": "Baga Beach"
-    }
-  ],
-  "transfers": [
-    {
-      "mode": "Car",
-      "pickup": "Airport",
-      "drop": "Hotel",
-      "time": "09:00 AM"
-    }
-  ],
-  "payments": [
-    {
-      "installment": 1,
-      "amount": 5000.00,
-      "due_date": "2025-10-25"
-    }
-  ],
-  "inclusions": ["Breakfast", "Airport transfer"],
-  "exclusions": ["Lunch", "Dinner"]
-}
+- **Language:** Go (Golang)  
+- **Router:** Gorilla Mux  
+- **PDF Generation:** gofpdf  
+- **Data Storage:** In-memory (mock persistence)  
 
+---
 
+## 📁 Project Structure
 
+itinerary-builder/
+├── handlers/ # API request handlers
+├── models/ # Data models
+├── routes/ # API routes
+├── services/ # PDF generation logic
+├── utils/ # Validation helpers
+├── output/ # Generated PDFs
+├── main.go # Server entrypoint
+├── go.mod
+└── go.sum
 
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+
+git clone https://github.com/gurwinder-gg/ITENARARY-BUILDER.git
+cd itinerary-builder
+
+Install dependencies
+
+go mod tidy
+
+Run the server
+
+go run main.go
+Server runs on http://localhost:8080 by default.

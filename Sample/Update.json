@@ -1,0 +1,31 @@
+{
+  "id": "trip001",
+  "user_id": "gurwinder07",
+  "title": "Goa Trip - Updated",
+  "start_date": "2025-11-01",
+  "end_date": "2025-11-07",
+  "hotels": [
+    {
+      "name": "Taj Resort",
+      "city": "Goa",
+      "check_in_date": "2025-11-01",
+      "check_out_date": "2025-11-05",
+      "nights": 4
+    }
+  ],
+  "flights": [
+    {
+      "airline": "IndiGo",
+      "flight_no": "6E245",
+      "from": "Delhi",
+      "to": "Goa",
+      "departure": "2025-11-01 06:00",
+      "arrival": "2025-11-01 08:30"
+    }
+  ],
+  "activities": [],
+  "transfers": [],
+  "payments": [],
+  "inclusions": ["Breakfast", "Airport transfer"],
+  "exclusions": ["Lunch", "Dinner"]
+}

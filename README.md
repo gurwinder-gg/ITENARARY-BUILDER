@@ -86,6 +86,7 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
 }
 
 ---
+
 Project Structure
 
 itinerary-builder/
@@ -104,6 +105,7 @@ itinerary-builder/
 Getting Started
 
 Clone the repo
+
 git clone https://github.com/gurwinder-gg/ITENARARY-BUILDER.git
 cd itinerary-builder
 

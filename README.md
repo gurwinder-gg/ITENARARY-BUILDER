@@ -1,7 +1,7 @@
 # 🗺️ Itinerary Builder API
 
 
-A **Golang REST API** for building, managing, and generating day-wise travel itineraries. Supports CRUD operations and PDF generation for travel plans.
+A **Golang REST API** for building, managing, and generating day wise travel itineraries. Supports CRUD operations and PDF generation for travel plans.
 
 ---
 

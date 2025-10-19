@@ -39,22 +39,15 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
 - **Data Storage:** In-memory (mock persistence)  
 
 ---
+Project
 
-## 📁 Project Structure
-
-itinerary-builder/
-├── handlers/ # API request handlers
-├── models/ # Data models
-├── routes/ # API routes
-├── services/ # PDF generation logic
-├── utils/ # Validation helpers
-├── output/ # Generated PDFs
-├── main.go # Server entrypoint
-├── go.mod
-└── go.sum
-
-yaml
-Copy code
+| Method | Endpoint                | Description                   |
+| ------ | ----------------------- | ----------------------------- |
+| POST   | `/itineraries`          | Create a new itinerary        |
+| GET    | `/itineraries/{id}`     | Retrieve an itinerary by ID   |
+| PUT    | `/itineraries/{id}`     | Update an itinerary           |
+| DELETE | `/itineraries/{id}`     | Delete an itinerary           |
+| GET    | `/itineraries/{id}/pdf` | Generate PDF for an itinerary |
 
 ---
 
@@ -66,12 +59,14 @@ Copy code
 
 git clone https://github.com/gurwinder-gg/ITENARARY-BUILDER.git
 cd itinerary-builder
+ ---
 
-Install dependencies
-
+### Install dependencies
 go mod tidy
 
-Run the server
-
+### Run the server
 go run main.go
+
 Server runs on http://localhost:8080 by default.
+
+

@@ -84,3 +84,40 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
   "inclusions": ["Breakfast", "Airport transfer"],
   "exclusions": ["Lunch", "Dinner"]
 }
+
+---
+Project Structure
+
+itinerary-builder/
+├── handlers/       # API request handlers
+├── models/         # Data models
+├── routes/         # API routes
+├── services/       # PDF generation
+├── utils/          # Validation helpers
+├── output/         # Generated PDFs
+├── main.go         # Server entry
+├── go.mod
+└── go.sum
+
+---
+
+Getting Started
+
+Clone the repo
+git clone https://github.com/gurwinder-gg/ITENARARY-BUILDER.git
+cd itinerary-builder
+
+---
+
+Install dependencies
+
+go mod tidy
+
+---
+Run the server
+
+go run main.go
+
+---
+Test APIs
+Use Postman or curl to interact with endpoints.

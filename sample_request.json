@@ -1,0 +1,50 @@
+{
+  "id": "trip001",
+  "user_id": "user123",
+  "title": "Goa Holiday",
+  "start_date": "2025-11-01",
+  "end_date": "2025-11-05",
+  "hotels": [
+    {
+      "name": "Taj Resort",
+      "city": "Goa",
+      "check_in_date": "2025-11-01",
+      "check_out_date": "2025-11-05",
+      "nights": 4
+    }
+  ],
+  "flights": [
+    {
+      "airline": "IndiGo",
+      "flight_no": "6E245",
+      "from": "Delhi",
+      "to": "Goa",
+      "departure": "2025-11-01T06:00",
+      "arrival": "2025-11-01T08:30"
+    }
+  ],
+  "activities": [
+    {
+      "time_of_day": "morning",
+      "description": "Beach visit",
+      "location": "Baga Beach"
+    }
+  ],
+  "transfers": [
+    {
+      "mode": "Car",
+      "pickup": "Airport",
+      "drop": "Hotel",
+      "time": "09:00 AM"
+    }
+  ],
+  "payments": [
+    {
+      "installment": 1,
+      "amount": 5000,
+      "due_date": "2025-10-25"
+    }
+  ],
+  "inclusions": ["Breakfast", "Airport transfer"],
+  "exclusions": ["Lunch", "Dinner"]
+}

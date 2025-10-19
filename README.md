@@ -87,28 +87,5 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
 
 ---
 
-Project Structure
 
-itinerary-builder/
-├── handlers/       # API request handlers
-├── models/         # Data models
-├── routes/         # API routes
-├── services/       # PDF generation
-├── utils/          # Validation helpers
-├── output/         # Generated PDFs
-├── main.go         # Server entry
-├── go.mod
-└── go.sum
 
----
-
-go mod tidy
-go mod tidy
-
-go mod tidy
-Run the server
-bash
-Copy code
-go run main.go
-Test APIs
-Use Postman or curl to interact with endpoints.

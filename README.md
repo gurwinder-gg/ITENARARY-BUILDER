@@ -85,7 +85,6 @@ A **Golang REST API** for building, managing, and generating day-wise travel iti
   "exclusions": ["Lunch", "Dinner"]
 }
 
----
 
 
 

@@ -1,16 +1,30 @@
 {
-  "id": "trip001",
+  "id": "trip002",
   "user_id": "gurwinder07",
-  "title": "Goa Trip - Updated",
+  "title": "Goa Adventure Trip",
   "start_date": "2025-11-01",
-  "end_date": "2025-11-07",
+  "end_date": "2025-11-08",
   "hotels": [
     {
       "name": "Taj Resort",
       "city": "Goa",
       "check_in_date": "2025-11-01",
-      "check_out_date": "2025-11-05",
-      "nights": 4
+      "check_out_date": "2025-11-03",
+      "nights": 2
+    },
+    {
+      "name": "Marriott Goa",
+      "city": "Goa",
+      "check_in_date": "2025-11-03",
+      "check_out_date": "2025-11-06",
+      "nights": 3
+    },
+    {
+      "name": "Leela Palace",
+      "city": "Goa",
+      "check_in_date": "2025-11-06",
+      "check_out_date": "2025-11-08",
+      "nights": 2
     }
   ],
   "flights": [
@@ -21,11 +35,112 @@
       "to": "Goa",
       "departure": "2025-11-01 06:00",
       "arrival": "2025-11-01 08:30"
+    },
+    {
+      "airline": "IndiGo",
+      "flight_no": "6E246",
+      "from": "Goa",
+      "to": "Delhi",
+      "departure": "2025-11-08 18:00",
+      "arrival": "2025-11-08 20:30"
     }
   ],
-  "activities": [],
-  "transfers": [],
-  "payments": [],
-  "inclusions": ["Breakfast", "Airport transfer"],
-  "exclusions": ["Lunch", "Dinner"]
+  "activities": [
+    {
+      "time_of_day": "morning",
+      "description": "Beach visit",
+      "location": "Baga Beach"
+    },
+    {
+      "time_of_day": "afternoon",
+      "description": "Water sports",
+      "location": "Calangute Beach"
+    },
+    {
+      "time_of_day": "evening",
+      "description": "Sunset cruise",
+      "location": "Mandovi River"
+    },
+    {
+      "time_of_day": "morning",
+      "description": "Paragliding",
+      "location": "Candolim Beach"
+    },
+    {
+      "time_of_day": "afternoon",
+      "description": "Bungee jumping",
+      "location": "Anjuna Adventure Park"
+    },
+    {
+      "time_of_day": "evening",
+      "description": "Dinner at a beachside restaurant",
+      "location": "Tito's Lane"
+    },
+    {
+      "time_of_day": "morning",
+      "description": "Bike rental and sightseeing",
+      "location": "Goa City Tour"
+    }
+  ],
+  "transfers": [
+    {
+      "mode": "Car",
+      "pickup": "Airport",
+      "drop": "Taj Resort",
+      "time": "09:00 AM"
+    },
+    {
+      "mode": "Car",
+      "pickup": "Taj Resort",
+      "drop": "Marriott Goa",
+      "time": "11:00 AM"
+    },
+    {
+      "mode": "Car",
+      "pickup": "Marriott Goa",
+      "drop": "Leela Palace",
+      "time": "10:00 AM"
+    },
+    {
+      "mode": "Car",
+      "pickup": "Leela Palace",
+      "drop": "Paragliding location",
+      "time": "07:30 AM"
+    },
+    {
+      "mode": "Car",
+      "pickup": "Leela Palace",
+      "drop": "Airport",
+      "time": "03:00 PM"
+    }
+  ],
+  "payments": [
+    {
+      "installment": 1,
+      "amount": 5000.00,
+      "due_date": "2025-10-25"
+    },
+    {
+      "installment": 2,
+      "amount": 7000.00,
+      "due_date": "2025-10-30"
+    },
+    {
+      "installment": 3,
+      "amount": 4000.00,
+      "due_date": "2025-11-05"
+    }
+  ],
+  "inclusions": [
+    "Breakfast",
+    "Airport transfer",
+    "Hotel Wi-Fi",
+    "Water sports activities"
+  ],
+  "exclusions": [
+    "Lunch",
+    "Dinner",
+    "Travel Insurance",
+    "Adventure sports fees"
+  ]
 }

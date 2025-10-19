@@ -102,24 +102,19 @@ itinerary-builder/
 
 ---
 
-Getting Started
+## 🚀 Getting Started
 
-Clone the repo
-
+### Clone the repo
+```bash
 git clone https://github.com/gurwinder-gg/ITENARARY-BUILDER.git
 cd itinerary-builder
-
----
-
 Install dependencies
-
+bash
+Copy code
 go mod tidy
-
----
 Run the server
-
+bash
+Copy code
 go run main.go
-
----
 Test APIs
 Use Postman or curl to interact with endpoints.

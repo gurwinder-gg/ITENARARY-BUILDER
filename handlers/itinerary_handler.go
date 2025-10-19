@@ -81,6 +81,55 @@ func DeleteItinerary(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNoContent)
 }
 
+// ✅ NEW: DeleteHotelByName handles DELETE /itineraries/{id}/hotels
+func DeleteHotelByName(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id := vars["id"]
+
+	itinerary, exists := itineraries[id]
+	if !exists {
+		http.Error(w, "Itinerary not found", http.StatusNotFound)
+		return
+	}
+
+	// Parse request body to get hotel name
+	var requestBody struct {
+		Name string `json:"name"`
+	}
+
+	if err := json.NewDecoder(r.Body).Decode(&requestBody); err != nil {
+		http.Error(w, "Invalid JSON body", http.StatusBadRequest)
+		return
+	}
+
+	if requestBody.Name == "" {
+		http.Error(w, "Hotel name is required", http.StatusBadRequest)
+		return
+	}
+
+	// Filter out the hotel by name
+	updatedHotels := []models.Hotel{}
+	found := false
+	for _, hotel := range itinerary.Hotels {
+		if hotel.Name == requestBody.Name {
+			found = true
+			continue // remove this hotel
+		}
+		updatedHotels = append(updatedHotels, hotel)
+	}
+
+	if !found {
+		http.Error(w, "Hotel not found", http.StatusNotFound)
+		return
+	}
+
+	itinerary.Hotels = updatedHotels
+	itineraries[id] = itinerary
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(itinerary)
+}
+
 // GeneratePDF handles GET /itineraries/{id}/pdf
 func GeneratePDF(w http.ResponseWriter, r *http.Request) {
 	id := mux.Vars(r)["id"]
@@ -102,3 +151,4 @@ func GeneratePDF(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println("PDF generated at:", filePath)
 }
+

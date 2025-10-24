@@ -1,6 +1,6 @@
 # 🗺️ Itinerary Builder API - Assignment for VIGOVIA
 
-A **production-grade Golang REST API** for creating, managing, and exporting day-wise travel itineraries.  
+A **Golang REST API** for creating, managing, and exporting day-wise travel itineraries.  
 Designed for scalability, clarity, and maintainability with clean RESTful endpoints, modular architecture, and dynamic PDF report generation.
 
 ---
